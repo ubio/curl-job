@@ -13,4 +13,5 @@ if [ "$status" -ge 200 -a "$status" -le 299 ]; then
     echo "Success!"
 else
     >&2 echo "Error, got status $status."
+    exit 1
 fi
